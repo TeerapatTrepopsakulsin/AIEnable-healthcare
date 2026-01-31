@@ -1,6 +1,9 @@
 .env
 app/models
-app/data
+app/data/auto_test
+app/data/test
+app/data/train
+app/data/val
 .venv
 app/__pycache__
 __pycache__/
