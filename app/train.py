@@ -12,7 +12,7 @@ val_dir = os.path.join(data_dir, 'val')
 # Image parameters
 IMG_HEIGHT = 224
 IMG_WIDTH = 224
-BATCH_SIZE = 128
+BATCH_SIZE = 32
 NUM_CLASSES = 5 # For classes 0-4
 
 # Load datasets
@@ -85,7 +85,7 @@ model.compile(
 )
 
 # Train the model
-EPOCHS = 5000
+EPOCHS = 10
 # EPOCHS = 1 # For quick testing
 early_stopping = tf.keras.callbacks.EarlyStopping(
     monitor='val_loss',
